@@ -24,21 +24,16 @@ function App() {
         <ToastContainer />
 
         <Container>
-          <Menus />
           <Header />
           <Row>
             <Col md={4}>
               <Menus />
-              <h2>
-                <Home />
-              </h2>
             </Col>
 
             <Col md={8}>
               <Routes>
-                <Route path="/" Component={Home} exact />
+                <Route path="/" Component={Allcourses} exact />
                 <Route path="/add.courses" Component={AddCoures} exact />
-                <Route path="/view.courses" Component={Allcourses} exact />
               </Routes>
             </Col>
           </Row>

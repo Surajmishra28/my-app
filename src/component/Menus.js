@@ -4,8 +4,20 @@ import { ListGroup, ListGroupItem } from "reactstrap";
 const Menus = () => {
   return (
     <ListGroup>
-      <Link tag="a" to="/">
+      <Link className="border border-light-subtle p-2 ps-3 rounded-top text-secondary text-decoration-none" tag="a" to="/">
         Home
+      </Link>
+      <Link className="border border-light-subtle p-2 ps-3 text-secondary text-decoration-none" tag="a" to="/">
+        Add Course
+      </Link>
+      <Link className="border border-light-subtle p-2 ps-3 text-secondary text-decoration-none" tag="a" to="/">
+        View Courses
+      </Link>
+      <Link className="border border-light-subtle p-2 ps-3 text-secondary text-decoration-none" tag="a" to="/">
+        About
+      </Link>
+      <Link className="border border-light-subtle p-2 ps-3 rounded-bottom text-secondary text-decoration-none" tag="a" to="/">
+        Contact
       </Link>
     </ListGroup>
   );

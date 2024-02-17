@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 import {
   Card,
   CardBody,
@@ -15,9 +16,11 @@ const courses = (course) => {
       <CardBody>
         <CardSubtitle className="font-weight-bold">{course.title}</CardSubtitle>
         <CardText>{course.description}</CardText>
-        <Container className="text-centere">
+        <span className="d-block text-center fw-bolder">Java Course</span>
+        <span className="d-block text-center pb-3">This is demo course</span>
+        <Container className="text-center">
           <Button color="danger">Delete</Button>
-          <Button color="waring ml-3">Update</Button>
+          <Button color="warning ms-3">Update</Button>
         </Container>
       </CardBody>
     </Card>
