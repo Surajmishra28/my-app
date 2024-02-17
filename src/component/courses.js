@@ -9,7 +9,7 @@ import {
   Button,
   Container,
 } from "reactstrap";
-const Courses = (course) => {
+const courses = (course) => {
   return (
     <Card>
       <CardBody>
@@ -24,4 +24,4 @@ const Courses = (course) => {
   );
 };
 
-export default Courses;
+export default courses;
