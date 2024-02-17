@@ -1,28 +1,21 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 
-import courses from "./courses"
+import Courses from "./Courses";
 
-
-const Allcourses=()=>{
-    const [course,setCourses] = useState([
-        {title: "java course",description: "this is demo course"},
-        {title: "java course",description: "this is demo course"},
-        {title: "java course",description: "this is demo course"},
-
-    ]);
-    return (
-        <div>
-            <h1>All coures</h1>
-            <p>
-                List of courses are as follows
-            </p>
-            {
-                course.length>0? course.map((item)=>(
-                    < courses  course = {item} />
-                )) : "No courses"
-            }
-        </div>
-
-    );
+const Allcourses = () => {
+  const [courses, setCourses] = useState([
+    { title: "java course", description: "this is demo course" },
+    { title: "python course", description: "this is demo course" },
+    { title: "php course", description: "this is demo course" },
+  ]);
+  return (
+    <div>
+      <h1>All coures</h1>
+      <p>List of courses are as follows</p>
+      {courses.length > 0
+        ? courses.map((item) => <Courses key={item.title} course={item} />)
+        : "No courses"}
+    </div>
+  );
 };
 export default Allcourses;
